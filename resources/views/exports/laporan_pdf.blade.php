@@ -8,7 +8,6 @@
         body {
             font-family: sans-serif;
             font-size: 11px;
-            /* Ukuran font lebih kecil */
         }
 
         table {
@@ -16,7 +15,6 @@
             border-collapse: collapse;
             margin-bottom: 20px;
             font-size: 10px;
-            /* Ukuran font lebih kecil untuk tabel */
         }
 
         table,
@@ -36,6 +34,10 @@
             font-size: 12px;
             margin-top: 20px;
             margin-bottom: 5px;
+        }
+
+        .page-break {
+            page-break-after: always;
         }
     </style>
 </head>
@@ -66,6 +68,8 @@
             @endforeach
         </tbody>
     </table>
+
+    <div class="page-break"></div>
 
     <h3>Pengeluaran</h3>
     <table>

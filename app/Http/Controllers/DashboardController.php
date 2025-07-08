@@ -120,7 +120,7 @@ class DashboardController extends Controller
             'totalPemasukan',
             'totalPengeluaran',
             'totalBersih'
-        ));
+        ))->setPaper('a4', 'portrait'); // <- Tambahkan ini
 
         return $pdf->download("laporan-keuangan-$bulan-$tahun.pdf");
     }
