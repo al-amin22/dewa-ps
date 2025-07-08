@@ -89,6 +89,6 @@ class TransaksiController extends Controller
     public function destroy(Transaksi $transaksi)
     {
         $transaksi->delete();
-        return redirect()->back()->with('success', 'Data berhasil disimpan');
+        return redirect()->back()->with('success', 'Data berhasil dihapus');
     }
 }
