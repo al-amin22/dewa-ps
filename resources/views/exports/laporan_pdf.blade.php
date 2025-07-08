@@ -7,24 +7,35 @@
     <style>
         body {
             font-family: sans-serif;
+            font-size: 11px;
+            /* Ukuran font lebih kecil */
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
+            font-size: 10px;
+            /* Ukuran font lebih kecil untuk tabel */
         }
 
         table,
         th,
         td {
             border: 1px solid #000;
-            padding: 6px;
+            padding: 4px;
             text-align: left;
         }
 
         h2 {
             margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        h3 {
+            font-size: 12px;
+            margin-top: 20px;
+            margin-bottom: 5px;
         }
     </style>
 </head>
