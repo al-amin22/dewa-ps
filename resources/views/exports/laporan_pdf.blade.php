@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: sans-serif;
-            font-size: 11px;
+            font-size: 14px;
         }
 
         table {
