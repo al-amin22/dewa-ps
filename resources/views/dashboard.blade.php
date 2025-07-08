@@ -16,11 +16,7 @@
 </div>
 @endif
 <div class="container-fluid">
-    <h1 class="mb-3">Selamat Datang, {{ Auth::user()->name }}</h1>
 
-    <div class="alert alert-success">
-        Anda login sebagai <strong>Admin</strong> (Role: {{ Auth::user()->role }})
-    </div>
     <!-- Header Section -->
     <div class="dashboard-header">
         <div class="row align-items-center">
@@ -170,6 +166,7 @@
                                             title="Hapus">
                                             <i class="fas fa-trash-alt"></i>
                                         </button>
+
                                     </td>
 
                                 </tr>

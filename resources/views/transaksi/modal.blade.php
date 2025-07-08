@@ -130,15 +130,15 @@
 </div>
 
 <!-- Modal Hapus Pengeluaran -->
-<div class="modal fade" id="hapusPengeluaranModal" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="hapusTransaksiModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title"><i class="fas fa-trash-alt me-2"></i>Hapus Pengeluaran</h5>
+                <h5 class="modal-title"><i class="fas fa-trash-alt me-2"></i>Hapus Pemasukan</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <p>Apakah Anda yakin ingin menghapus pengeluaran ini?</p>
+                <p>Apakah Anda yakin ingin menghapus Pemasukan ini?</p>
             </div>
             <div class="modal-footer">
                 <form id="formHapusPengeluaran" method="POST">
@@ -152,12 +152,14 @@
     </div>
 </div>
 <script>
-    function deletePengeluaran(id) {
+    function deleteTransaksi(id) {
         const form = document.getElementById('formHapusPengeluaran');
-        form.action = `/pengeluaran/${id}`;
-        new bootstrap.Modal(document.getElementById('hapusPengeluaranModal')).show();
+        form.action = `/transaksi/${id}`;
+        const modal = new bootstrap.Modal(document.getElementById('hapusTransaksiModal'));
+        modal.show();
     }
 </script>
+
 
 <script>
     // Tanggal change handler untuk form tambah
